@@ -1,0 +1,40 @@
+.contenedor__buscador{
+    width: 100%;
+    height: 70px;
+    background: #005;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor__buscador > *{
+    height: 50px;
+    padding: 0 20px;
+    outline: none;
+    font-size: 1.2em;
+}
+#buscador{
+    width: 50%;
+    margin-right: 10px;
+}
+#btnBuscar{
+    width: 30%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px){
+    .contenedor__buscador{
+        flex-direction: column;
+        height: 120px;
+    }
+    .contenedor__buscador > *{
+        font-size: 1em;
+    }
+    #buscador{
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    #btnBuscar{
+        width: 90%;
+    }
+}

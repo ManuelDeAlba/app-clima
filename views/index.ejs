@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <%- include('partials/buscador.ejs') %>
+    <div class="card">
+        <img src="<%= imgSrc %>"" alt="<%= imgAlt %>" class="img-clima">
+        <h2 class="titulo"><%= titulo %></h2>
+        <div class="card__estado">
+            <h2><%= temperatura %> °C</h2>
+            <h2><%= imgAlt %></h2>
+        </div>
+        <h2 class="subtitulo">Probabilidad de lluvia:<span class="subtitulo__dato"><%= probabilidad %></span></h2>
+        <h2 class="subtitulo">Humedad:<span class="subtitulo__dato"><%= humedad %></span></h2>
+        <h2 class="subtitulo">Viento:<span class="subtitulo__dato"><%= viento %></span></h2>
+    </div>
+</body>
+</html>
